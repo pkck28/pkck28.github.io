@@ -92,61 +92,64 @@ html {
     margin: 0 auto;
 }
 
-.main-nav {
-    text-align: center;
-}
-
-.main-nav li {
-    display: block;
-}
-
-.main-nav li a {
-    height: 60px;
-    line-height: 60px;
-    display: inline-block;
-    font-size: 27px;
-    font-weight: 700;
-    color: #fff;
-    width: 80%;
-    transition: all 0s;
-}
-
-.main-nav li:hover a,
-.main-nav li.active a {
-    background: #fff;
-    color: #131112c9;
-}
-
 /* Sidebar Menu */
 
 .menu .author-content {
-    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0px;
 }
 
-.menu .author-content span {
-    font-size: 14px;
-    font-style: italic;
-    color: #fff;
+.menu .author-content h4 {
+    width: 100%;
 }
 
-.menu .social-network {
-    margin: 0px ;
+.menu .navigation ul {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
 }
 
-.menu .social-network ul li {
-    margin: 0 3px;
+.menu .navigation ul li {
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    transition: all 0.5s;   
+}
+
+.menu .navigation ul li a{
+    display: inline-block;
+    width: 100%;
+    color: inherit;
+}
+
+.menu .navigation ul li:hover a,
+.menu .navigation ul li.active a{
+    background: #fff;
+    color: #000000c9;
+}
+
+.menu .social-network ul {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .menu .social-network ul li a {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 20px;
     transition: all 0.5s;
+    padding: 0px 10px;
 }
 
 .menu .social-network ul li a:hover {
@@ -155,22 +158,15 @@ html {
 }
 
 .menu .copyright-text {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
 
 .menu .copyright-text p {
     display: inline-block;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
     font-size: 13px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: inherit;
-    margin: 10px 10px;
 }
 
 .menu {
@@ -178,10 +174,7 @@ html {
     background-color: #000000fd;
     height: 100%;
     overflow-x: hidden;
-    padding: 0;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 25%;
     will-change: transform;
     z-index: 1;
@@ -228,7 +221,6 @@ html {
     display: inline-block;
     line-height: 60px;
 }
-
 
 /* Section */
 
@@ -331,6 +323,7 @@ section.my-work .section-heading {
     flex-wrap: nowrap;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: blueviolet;
 }
 
 .content{
@@ -474,11 +467,6 @@ section.contact-me {
     .menu {
         left: 0%;
     }
-}
-
-.menu .container {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 846px) {
