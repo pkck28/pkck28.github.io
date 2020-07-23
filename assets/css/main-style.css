@@ -458,8 +458,8 @@ section.contact-me {
         text-align: center;
         justify-content: center;
         background-color: green;
-        padding-top: 30px;
-        padding-bottom: 10px    ;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
     .menu .author-content h4 {
@@ -474,15 +474,14 @@ section.contact-me {
         flex-direction: row;
         align-items: center;
         height: 50px;
-        /* justify-content: space-around; */
+        justify-content: space-around;
         background-color: yellow;
     }
     
     .menu .navigation ul li {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        width: 80%;
-        transition: all 0.5s;   
+        font-size: 25px;
+        transition: all 0s;   
+        width: 67%;
     }
     
     .menu .navigation ul li a{
@@ -495,13 +494,15 @@ section.contact-me {
     .menu .navigation ul li.active a{
         background: #fff;
         color: #000000c9;
+        transition: 0.5s; 
     }
     
     .menu .social-network ul {
         position: relative;
+        top: 0px;
         display: flex;
         flex-direction: row;
-        font-size: 35px;
+        font-size: 20px;
         align-items: center;
         justify-content: space-evenly;
         background-color: red;
@@ -510,28 +511,31 @@ section.contact-me {
     .menu .social-network ul li a {
         background-color: rgba(0, 0, 0, 0.2);
         color: #fff;
-        transition: all 0.5s;
+        transition: all 0s;
         padding: 0px 10px;
     }
     
     .menu .social-network ul li a:hover {
         background-color: #fff;
         color: #000000c9;
+        transition: 0.5s; 
     }
     
     .menu .copyright-text {
-        position: absolute;
-        bottom: 0;
-        width: 90%;
         display: none;
     }
-    
-    .menu .copyright-text p {
-        display: inline-block;
-        width: 100%;
-        font-size: 10px;
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
     }
 
+    .section {
+        width: 80%;
+        right: 10%;
+        left: 10%;
+    }
+    
 }
 
 /* @media screen and (max-width: 740px) {
