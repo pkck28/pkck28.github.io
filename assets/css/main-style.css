@@ -531,9 +531,42 @@ section.contact-me {
     }
 
     .section {
+        margin: auto;
         width: 80%;
-        right: 10%;
-        left: 10%;
+        text-align: center;
+    }
+
+    .section-heading {
+        text-align: center;
+        padding: 80px 45px 60px 45px;
+    }
+    
+    .section-heading h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+    }
+    
+    .section-heading .line-dec {
+        width: 60px;
+        height: 3px;
+        background-color: #131112c9; /* #a43f49; */
+        margin: 10px auto;
+    }
+    
+    .section-heading span {
+        margin-top: 5px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.5px;
+        padding-bottom: 0;
+    }
+    
+    .about-me-info p{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.5px;
+        text-align: center;
     }
     
 }
