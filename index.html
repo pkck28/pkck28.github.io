@@ -6,25 +6,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="personal webpage" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
     <title>Pavankumar Koratikere</title>
 
     <!-- Adding icon to the title bar-->
-    <link rel = "icon" href =  "assets/images/symbol.jpg" 
-        type = "image/x-icon"> 
+    <link rel = "icon" href =  "assets/images/symbol.jpg" type = "image/x-icon"> 
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/main-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
 
   </head>
 
@@ -32,52 +25,49 @@
     <div id="page-wraper">
 
       <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
+      <div id="menu" class="menu">
+        <div class="container">
 
-          <div class="container">
-
-            <div class="author-content">
-              <h4>Pavankumar Koratikere</h4>
-            </div>
-
-            <div class="navigation" >
-              <ul class="main-menu">
-                <li><a href="#about-me">About Me</a></li>
-                <!-- <li><a href="#section2">Blogs</a></li> -->
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-              </ul>
-            </div>
-
-            <div class="social-network">
-              <ul>
-                <li>
-                  <a href="https://github.com/pkck28"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/kcpkumar/"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:kcpkumar33@gmail.com"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="copyright-text">
-              <p>
-                Copyright &copy Pavankumar Koratikere 2020
-              </p>
-            </div>
-
+          <div class="author-content">
+            <h4>Pavankumar Koratikere</h4>
           </div>
+
+          <div class="navigation" >
+            <ul class="main-menu">
+              <li class="current"><a href="#about-me">About Me</a></li>
+              <li><a href="#my-work">My Work</a></li>
+              <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+          </div>
+
+          <div class="social-network">
+            <ul>
+              <li>
+                <a href="https://github.com/pkck28"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kcpkumar/"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="mailto:kcpkumar33@gmail.com"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright-text">
+            <p>
+              Copyright &copy Pavankumar Koratikere 2020
+            </p>
+          </div>
+
         </div>
       </div>
 
+
       <!-- About Me -->
-      <section class="section about-me" data-section="about-me">
+      <a name="about-me"></a>
+      <div id="about-me">
+        
         <div class="container">
 
           <div class="section-heading">
@@ -105,10 +95,11 @@
           </div>
 
         </div>
-      </section>
+      </div>
 
       <!-- Projects -->
-      <section class="section my-work" data-section="my-work">
+      <a name="my-work"></a>
+      <div id="my-work">
         <div class="container">
 
           <div class="section-heading">
@@ -198,7 +189,8 @@
       </section>
 
       <!-- Contact Me -->
-      <section class="section contact-me" data-section="contact-me">
+      <a name="contact-me"></a>
+      <div id="contact-me">
 
         <div class="container">
 
@@ -285,64 +277,44 @@
     </div>
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+      
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
         });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
       });
 
-      $(window).scroll(function() {
-        checkSection();
+      // Jquery code for highlighting a specific navigation element when active
+      $(document).on('click', '.menu .navigation ul li', function(){
+        $(this).addClass('current').siblings().removeClass('current')
+      })
+
+      // Jquery code for going to the top of the page when reloaded
+      $(document).ready(function(){
+      $(this).scrollTop(0);
       });
-    </script>
+    </script> 
 
   </body>
 
