@@ -17,263 +17,264 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/main-style.css" />
+    <link rel="stylesheet" media="screen and (min-device-width: 1300px)" href="assets/css/above_1300.css" />
+    <link rel="stylesheet" media="screen and (max-device-width: 1300px)" href="assets/css/below_1300.css" />
 
   </head>
 
   <body>
     <div id="page-wraper">
 
-      <!-- Sidebar Menu -->
-      <div id="menu" class="menu">
-        <div class="container">
+      <!-- Nav Bar -->
+      <div class="menu">
 
-          <div class="author-content">
-            <h4>Pavankumar Koratikere</h4>
-          </div>
-
-          <div class="navigation" >
-            <ul class="main-menu">
-              <li class="current"><a href="#about-me">About Me</a></li>
-              <li><a href="#my-work">My Work</a></li>
-              <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-          </div>
-
-          <div class="social-network">
-            <ul>
-              <li>
-                <a href="https://github.com/pkck28"><i class="fa fa-github"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/kcpkumar/"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="mailto:kcpkumar33@gmail.com"><i class="fa fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="copyright-text">
-            <p>
-              Copyright &copy Pavankumar Koratikere 2020
-            </p>
-          </div>
-
+        <div class="name">
+          <h4>Pavankumar Koratikere</h4>
         </div>
+
+        <div class="navigation" >
+          <ul class="main-menu">
+            <li class="current"><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="social-network">
+          <ul>
+            <li>
+              <a href="https://github.com/pkck28"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kcpkumar/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="mailto:kcpkumar33@gmail.com"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <p>
+            Copyright &copy Pavankumar Koratikere 2020
+          </p>
+        </div>
+
       </div>
 
+      <!-- Flex Element for all the content -->
+      <div class="content">
 
-      <!-- About Me -->
-      <a name="about-me"></a>
-      <div id="about-me">
-        
-        <div class="container">
+        <!-- About Me -->
+        <div id="about-me">
 
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-          </div>
+          <a name="about-me"></a>
+          <div class="container">
+            <div class="section-heading">
+              <h2>About Me</h2>
+              <div class="line-dec"></div>
+            </div>
 
-          <div class="about-me-info">
-            <p>
-              Greetings and welcome to my webpage! <br/>
-              <br/>
-              My name is Pavankumar Koratikere and I am a Mechanical Engineering graduate from NITK - Surathkal (Batch of 2020),
-              who is passionate about airplanes, aviation, coding. I will be joining Boeing 
-              India Engineering and Technology Center (BIETC) at Bangalore as a Product System Developer from Feb 2021.   
-              <br/>
-              <br/>
-              Scroll down for more details.
-            </p>
-          </div>
-
-          <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <a name="my-work"></a>
-      <div id="my-work">
-        <div class="container">
-
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span>
-              During my undergrad, I worked on various projects spanning from aircraft design to machine learning. Few of them are listed below.
-            </span>
-          </div>
-
-          <!-- AIAA DC 2019-20 -->
-          <div class="flex-container">
-            
-            <div class="content">
-              <h4>AIAA Design Challenge 2019-20</h4>
+            <div class="about-me-info">
               <p>
-                I worked on the development of a Short Range Large Capacity Transport
-                airplane demanded by AIAA's 2019-20 RFP. I lead a team of 8 people
-                for this purpose and also worked on Optimization, Aerodynamics,
-                and Stability analysis of the plane. Click on the read more button
-                for the design report. 
+                Greetings and welcome to my webpage! <br/>
+                <br/>
+                My name is Pavankumar Koratikere and I am a Mechanical Engineering graduate from NITK - Surathkal (Batch of 2020),
+                who is passionate about airplanes, aviation, coding. I will be joining Boeing 
+                India Engineering and Technology Center (BIETC) at Bangalore as a Product System Developer from Feb 2021.   
+                <br/>
+                <br/>
+                Scroll down for more details.
               </p>
             </div>
 
-            <div class="image">
-              <img src="assets/images/tarmac.png" alt="Lissome 400"> 
-            </div>
-
-          </div>
-
-          <!-- B. Tech Thesis -->
-          <div class="flex-container">
-            <div class="content">
-              <h4>Bachelor's Thesis</h4>
-              <p>
-                As a part of my Bachelor's thesis, I lead a team of three people, working on the prevention 
-                of Loss of Control (LOC). We worked on prevention of LOC in the event of Actuator failures. 
-                We implemented a Linear Model Predictive Control System for the same. The algorithm was 
-                developed on MATLAB and Simulink. F-18 High Alpha Research vehicle was used as a test 
-                platform for demonstration. Click on read more button for the thesis. 
-              </p>
-            </div>
-            <div class="image">
-              <img src="assets/images/F18.jpg" alt="F-18 HARV"> 
-            </div>
-          </div>
-
-          <!-- IIT Bombay Internship -->
-          <div class="flex-container">
-            <div class="content">
-              <h4>Airship Simulation</h4>
-              <p>
-                I developed a plugin in Gazebo for simulating the airship dynamics. This work was 
-                carried out when I interned at Lighter than Air Systems Laboratory, Indian Insitute of Technology
-                Bombay under the guidance of <a href="https://www.aero.iitb.ac.in/~rkpant/">Dr. Rajkumar Pant</a>.
-              </p>
-            </div>
-            <div class="image">
-              <img src="assets/images/airship.jpg" alt="Airship"> 
-            </div>
-          </div>
-
-          <!--AIAA Design Challenge 2018-19-->
-          <div class="flex-container">
-            <div class="content">
-              <h4>AIAA Design Challenge 2018-19</h4>
-              <p>
-                Developed a 7 seater passenger airplane to increase the connectivity to the
-                small counties. 
-              </p>
-            </div>
-            <div class="image">
-              <img src="assets/images/flicker.JPG" alt="Flicker"> 
-            </div>
-          </div>
-
-          <div class="flex-container">
-            <div class="content">
-              <p>
-                <a href="assets/pdf/Resume.pdf">Click here</a> for my resume. Apart from this, I love reading about 
-                airplane history, watching movies.
-              </p>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
 
         </div>
-      </section>
 
-      <!-- Contact Me -->
-      <a name="contact-me"></a>
-      <div id="contact-me">
+        <!-- Projects -->
+        <a name="my-work"></a>
+        <div id="my-work">
+          <div class="container">
 
-        <div class="container">
+            <div class="section-heading">
+              <h2>My Work</h2>
+              <div class="line-dec"></div>
+              <span>
+                During my undergrad, I worked on various projects spanning from aircraft design to machine learning. Few of them are listed below.
+              </span>
+            </div>
 
-          <div class="section-heading">
-            <h2>Let's Talk</h2>
-            <div class="line-dec"></div>
-            <span>
-              Feel free to contact me regarding aircraft design projects, new aviation technology, etc.
-            </span>
+            <!-- AIAA DC 2019-20 -->
+            <div class="flex-container">
+              
+              <div class="content">
+                <h4>AIAA Design Challenge 2019-20</h4>
+                <p>
+                  I worked on the development of a Short Range Large Capacity Transport
+                  airplane demanded by AIAA's 2019-20 RFP. I lead a team of 8 people
+                  for this purpose and also worked on Optimization, Aerodynamics,
+                  and Stability analysis of the plane. Click on the read more button
+                  for the design report. 
+                </p>
+              </div>
+
+              <div class="image">
+                <img src="assets/images/tarmac.png" alt="Lissome 400"> 
+              </div>
+
+            </div>
+
+            <!-- B. Tech Thesis -->
+            <div class="flex-container">
+              <div class="content">
+                <h4>Bachelor's Thesis</h4>
+                <p>
+                  As a part of my Bachelor's thesis, I lead a team of three people, working on the prevention 
+                  of Loss of Control (LOC). We worked on prevention of LOC in the event of Actuator failures. 
+                  We implemented a Linear Model Predictive Control System for the same. The algorithm was 
+                  developed on MATLAB and Simulink. F-18 High Alpha Research vehicle was used as a test 
+                  platform for demonstration. Click on read more button for the thesis. 
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/images/F18.jpg" alt="F-18 HARV"> 
+              </div>
+            </div>
+
+            <!-- IIT Bombay Internship -->
+            <div class="flex-container">
+              <div class="content">
+                <h4>Airship Simulation</h4>
+                <p>
+                  I developed a plugin in Gazebo for simulating the airship dynamics. This work was 
+                  carried out when I interned at Lighter than Air Systems Laboratory, Indian Insitute of Technology
+                  Bombay under the guidance of <a href="https://www.aero.iitb.ac.in/~rkpant/">Dr. Rajkumar Pant</a>.
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/images/airship.jpg" alt="Airship"> 
+              </div>
+            </div>
+
+            <!--AIAA Design Challenge 2018-19-->
+            <div class="flex-container">
+              <div class="content">
+                <h4>AIAA Design Challenge 2018-19</h4>
+                <p>
+                  Developed a 7 seater passenger airplane to increase the connectivity to the
+                  small counties. 
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/images/flicker.JPG" alt="Flicker"> 
+              </div>
+            </div>
+
+            <div class="flex-container">
+              <div class="content">
+                <p>
+                  <a href="assets/pdf/Resume.pdf">Click here</a> for my resume. Apart from this, I love reading about 
+                  airplane history, watching movies.
+                </p>
+              </div>
+            </div>
+
           </div>
 
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  
-                  <div class="row">
+        <!-- Contact Me -->
+        <a name="contact-me"></a>
+        <div id="contact-me">
 
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
+          <div class="container">
 
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
+            <div class="section-heading">
+              <h2>Let's Talk</h2>
+              <div class="line-dec"></div>
+              <span>
+                Feel free to contact me regarding aircraft design projects, new aviation technology, etc.
+              </span>
+            </div>
 
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
+            <div class="row">
+              <div class="right-content">
+                <div class="container">
+                  <form id="contact" action="" method="post">
+                    
+                    <div class="row">
 
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
+                      <div class="col-md-6">
+                        <fieldset>
+                          <input
+                            name="name"
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Your name..."
+                            required=""
+                          />
+                        </fieldset>
+                      </div>
+
+                      <div class="col-md-6">
+                        <fieldset>
+                          <input
+                            name="email"
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            placeholder="Your email..."
+                            required=""
+                          />
+                        </fieldset>
+                      </div>
+
+                      <div class="col-md-12">
+                        <fieldset>
+                          <input
+                            name="subject"
+                            type="text"
+                            class="form-control"
+                            id="subject"
+                            placeholder="Subject..."
+                            required=""
+                          />
+                        </fieldset>
+                      </div>
+
+                      <div class="col-md-12">
+                        <fieldset>
+                          <textarea
+                            name="message"
+                            rows="6"
+                            class="form-control"
+                            id="message"
+                            placeholder="Your message..."
+                            required=""
+                          ></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-12">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="button">
+                            Send Message
+                          </button>
+                        </fieldset>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+      </div>
     </div>
 
     <!-- Scripts -->
