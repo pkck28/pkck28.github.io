@@ -58,12 +58,18 @@ a:link {
     text-emphasis: emphasis;
 }
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /* ------------------- Sidebar Menu ------------------- */
 
 .menu { 
     background-color: #000000fd;
     height: 100%;
-    overflow-x: hidden;
+    overflow-y: auto;
     position: fixed;
     width: 25%;
     text-align: center;
@@ -76,8 +82,7 @@ a:link {
     display: inline-block;
     text-align: center;
     justify-content: center;
-    padding: 20px 0px 0px 0px;
-    /* background-color: salmon; */
+    padding: 1.5vw 0px 0px 0px;
 }
 
 .menu .name h4 {
@@ -93,7 +98,6 @@ a:link {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: yellow; */
 }
 
 .menu .navigation ul li {
@@ -101,7 +105,6 @@ a:link {
     color: rgb(255, 255, 255);
     padding: 5% 0%;
     width: 18vw;  
-    /* background-color: tomato; */
 }
 
 .menu .navigation ul li a{
@@ -166,12 +169,12 @@ a:link {
 }
 
 #about {
-    margin: 0% 5%;
+    margin: 0% 3.75vw;
 }
 
 .about-info {
     background-color: rgb(106, 154, 209);
-    margin-top: 5%;
+    margin-top: 3.75vw;
     text-align: center;
 }
 
@@ -243,12 +246,12 @@ a:link {
 }
 
 #project {
-    margin: 0% 5%;
+    margin: 0% 3.75vw;
 }
 
 .project-info {
     background-color: rgb(106, 154, 209);
-    margin-top: 5%;
+    margin-top: 3.75vw;
     text-align: center;
 }
 
@@ -287,7 +290,7 @@ img {
 }
 
 #contact {
-    margin: 0% 5%;
+    margin: 0% 3.75vw;
     margin-bottom: 4%;
 }
 
